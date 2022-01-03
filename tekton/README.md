@@ -1,4 +1,10 @@
-#Configure persistent volume for Tekton
+# Installing tekton
+
+kubectl apply -f https://storage.googleapis.com/tekton-releases/pipeline/previous/v0.16.0/release.yaml
+kubectl apply -f https://storage.googleapis.com/tekton-releases/triggers/previous/v0.8.1/release.yaml
+
+# Configure persistent volume for Tekton
+
 kubectl create configmap config-artifact-pvc \
 --from-literal=size=10Gi \
 --from-literal=storageClassName=manual \

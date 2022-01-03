@@ -8,6 +8,8 @@ Now you can access localhost:5000
 
 If you want to test pushing do the following command:
 
+docker tag ubuntu:16.04 localhost:5000/my-ubuntu
+
 docker push localhost:5000/my-alpine
 
 You can also pull or run it:
