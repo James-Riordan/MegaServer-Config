@@ -37,7 +37,7 @@ spec:
       params:
       - name: url
         # Replace <docker_registry_name> with your docker registry name (e.g. my-acr.azurecr.io)
-        value: '127.0.0.1:5000'
+        value: 'https://github.com/James-Riordan/MegaServer-Config.git#refs/heads/feature-add-working-tekton'
       type: image
   - apiVersion: tekton.dev/v1alpha1
     kind: PipelineRun
